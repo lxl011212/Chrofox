@@ -289,7 +289,6 @@ class MainWindow(QMainWindow):
     def navigate_home(self):
         self.tabs.currentWidget().setUrl(QUrl("https://www.google.com"))
 
-
 app = QApplication(sys.argv)
 # APPLICATION NAME
 app.setApplicationName("Spinn Browser")
