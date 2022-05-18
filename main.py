@@ -114,7 +114,7 @@ class MainWindow(QMainWindow):
         # ADD HELP MENU ACTIONS
         navigate_home_action = QAction(QIcon(os.path.join('icons', 'cil-exit-to-app.png')),
                                             "Homepage", self)
-        navigate_home_action.setStatusTip("Go to Spinn Design Homepage")
+        navigate_home_action.setStatusTip("Go to Homepage")
         help_menu.addAction(navigate_home_action)
         # NAVIGATE TO DEVELOPER WEBSITE
         navigate_home_action.triggered.connect(self.navigate_home)
@@ -122,7 +122,7 @@ class MainWindow(QMainWindow):
 
 
         # SET WINDOW TITTLE AND ICON
-        self.setWindowTitle("Spinn Browser")
+        self.setWindowTitle("Browser")
         self.setWindowIcon(QIcon(os.path.join('icons', 'cil-screen-desktop.png')))
 
 
@@ -291,11 +291,11 @@ class MainWindow(QMainWindow):
 
 app = QApplication(sys.argv)
 # APPLICATION NAME
-app.setApplicationName("Spinn Browser")
+app.setApplicationName("Browser")
 # APPLICATION COMPANY NAME
-app.setOrganizationName("Spinn Company")
+app.setOrganizationName("Steven Liu")
 # APPLICATION COMPANY ORGANISATION
-app.setOrganizationDomain("spinn.org")
+app.setOrganizationDomain("")
 
 
 window = MainWindow()
